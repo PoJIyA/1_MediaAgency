@@ -1,0 +1,569 @@
+:root {
+    --text-color: #fbfcff;
+    --link-color: #4a76ee;
+    --background-blue: #65C5F5;
+    --background-white: rgb(255, 255, 255);
+    --egg-color: #FCDE1B;
+    --cup-color: #FD806F;
+    --cherry-color: #ADE5D8;
+    --clementine-color: #65C7F8;
+ }
+ 
+ * {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+ }
+ 
+ html {
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   font-family: 'Poppins', sans-serif;
+   background-color: var(--background-blue);
+ }
+
+ a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+img {
+    margin: 0px;
+    padding: 0px;
+    }
+  
+  /* NAVBAR */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background-color: var(--background-blue);
+  }
+  
+  nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  nav .right a:last-child {
+    color: var(--background-blue);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  nav .right a span {
+    margin-left: 5px;
+  }
+
+  nav .right a i {
+    display: none;
+  }
+
+  nav a:hover {
+    color: #FCDE1B;
+  }
+
+  /* ORANGE */
+
+  .orange-section {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-blue);
+  }
+
+  .orange-section h1 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 60px;
+  }
+
+  .orange-section .picture img {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /* EGG */
+
+  .egg-section {
+    display: flex;
+    height: 600px;
+    align-content: stretch;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .egg-section .textbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 100px;
+    background-color: var(--background-white);
+  }
+
+  .egg-section .text h3 {
+    margin-bottom: 20px;
+  }
+
+  .egg-section .text p {
+    margin-bottom: 20px;
+  }
+
+  .egg-section .textbox button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: var(--egg-color);
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+    }
+
+    .egg-section .image {
+    width: 50%;
+    object-fit: cover;
+    background-color: var(--egg-color);
+  }
+
+  .egg-section .image img {
+    width: 100%;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+  }
+
+  /* CUP */
+
+  .cup-section {
+    display: flex;
+    height: 600px;
+    align-content: stretch;
+    background-color: var(--background-white);
+    width: 100%;
+    height: fit-content;
+  }
+
+  .cup-section .textbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 100px;
+    background-color: var(--background-white);
+  }
+
+  .cup-section .text h3 {
+    margin-bottom: 20px;
+  }
+
+  .cup-section .text p {
+    margin-bottom: 20px;
+  }
+
+  .cup-section .textbox button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: var(--cup-color);
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+    }
+
+    .cup-section .image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--cup-color);
+    padding: 0px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .cup-section .image img {
+    width: 100%;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+  }
+
+  /* FRUITS */
+
+  .fruit-section {
+    display: flex;
+    height: 600px;
+    align-content: stretch;
+    width: 100%;
+    height: fit-content;
+  } 
+
+  .fruit-section .text {
+    text-align: center;
+    padding: 80px;
+  }
+
+  .fruit-section .cherry {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-image: url(images/cherry.jpg);
+    background-size: cover;
+    background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+    padding-top: 400px;
+  }
+
+  .fruit-section .cherry img {
+    width: 100%;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+  }
+
+  .fruit-section .clementine {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-image: url(images/clementine.jpg);
+    background-size: cover;
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding-top: 400px;
+  }
+
+  .fruit-section .clementine img {
+    width: 100%;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+  }
+
+  /* TEAM */
+
+  .team-section {
+    background-color: var(--text-color);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+  }
+
+  .team-section .teams {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    padding-top: 32px;
+  }
+
+  .team-section .teams .teammate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 16px;
+  }
+
+  .team-section img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .team-section p {
+    text-align: center;
+  }
+
+  /* GALLERY */
+
+  .gallery-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin: auto;
+    height: 600px;
+    width: 100%;
+    background-color: black;
+  }
+
+  .gallery-section img {
+    object-fit: cover;
+    height: 100%;
+    flex-grow: 1;
+    width: 25%;
+  }
+
+  /*CONTACT*/
+
+  /* SECTION 4: Contact */
+
+.contact-section {
+    padding: 100px;
+    background-color: var(--cherry-color);
+
+  }
+  
+  .contact-section h2 {
+    font-size: 35px;
+  }
+  
+  .contact-section .group {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+  }
+  
+  .contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section .group form input,
+  .contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--text-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+  }
+  
+  .contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+  }
+  
+  .contact-section .group form button:hover {
+    background-color: var(--egg-color);
+  }
+
+  /* FOOTER */
+
+  .footer {
+    height: 400px;
+    background-color: var(--cherry-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .footer .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .footer .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+
+
+  @media (max-width: 1070px) {
+
+    /* NAVBAR */
+  nav {
+    padding: 0 0px 0px 60px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  nav .right a i {
+    display: block;
+    color: #fbfcff;
+  }
+
+  nav .left a {
+    font-size: smaller;
+  }
+
+  main .orange-section .text h1 {
+    font-size: 40px;
+  }
+
+  /* SECTION 2: Egg*/
+
+  .egg-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .egg-section .textbox {
+    padding: 50px;
+    width: 100%;
+  }
+
+  .egg-section .text {
+    font-size: smaller;
+    padding: 50px;
+  }
+
+  .egg-section .image {
+    width: 100%;
+    background-color: var(--egg-color);
+  }
+
+    /* SECTION 3: CUP*/
+
+  .cup-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+
+  .cup-section .textbox {
+    padding: 50px;
+    width: 100%;
+  }
+
+  .cup-section .text {
+    font-size: smaller;
+    padding: 50px;
+  }
+
+  .cup-section .image {
+    width: 100%;
+    background-color: var(--cup-color);
+  }
+
+  /* Section 4: FRUITS */
+
+  .fruit-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  } 
+
+  .fruit-section .text {
+    text-align: center;
+    padding: 80px;
+  }
+
+  .fruit-section .cherry {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-image: url(images/cherry.jpg);
+    background-size: cover;
+    background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+    padding-top: 300px;
+  }
+
+  .fruit-section .cherry img {
+    width: 100%;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+  }
+
+  .fruit-section .clementine {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-image: url(images/clementine.jpg);
+    background-size: cover;
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding-top: 300px;
+  }
+
+  .fruit-section .clementine img {
+    width: 100%;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+  }
+
+  /* Section 5: TEAM */
+
+  .team-section {
+    background-color: var(--text-color);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .team-section .teams {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    padding-top: 32px;
+  }
+
+  /* GALLERY */
+
+  .gallery-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+  }
+
+  .gallery-section img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+
+  .contact-section {
+    padding: 0 20px;
+  }
+
+  }
